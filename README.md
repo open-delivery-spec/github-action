@@ -94,14 +94,14 @@ Pin the Action to a major tag so you receive fixes without breaking changes:
 ```
 
 > **Note on the CLI it installs.** By default the Action installs a **pinned
-> stable release** of the ODS CLI (`cli-ref: v0.7.6`) so runs are reproducible.
+> stable release** of the ODS CLI (`cli-ref: v0.7.7`) so runs are reproducible.
 > To always track the latest detection and analysis improvements, set it to
 > `main` (or any tag/commit):
 >
 > ```yaml
 > - uses: open-delivery-spec/validate-action@v1
 >   with:
->     cli-ref: main   # latest; or a specific tag/commit like v0.7.6
+>     cli-ref: main   # latest; or a specific tag/commit like v0.7.7
 > ```
 
 ---
@@ -227,7 +227,7 @@ not green is named in a **Why** line:
 | `artifact-name` | No | `ods-report` | Uploaded artifact name |
 | `artifact-retention-days` | No | `30` | Artifact retention period |
 | `github-token` | No | `${{ github.token }}` | Token for PR comments |
-| `cli-ref` | No | `v0.7.6` | ODS CLI version/tag/commit (`main` for latest) |
+| `cli-ref` | No | `v0.7.7` | ODS CLI version/tag/commit (`main` for latest) |
 
 ## Outputs
 
